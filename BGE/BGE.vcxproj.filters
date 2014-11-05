@@ -42,6 +42,9 @@
     <Filter Include="Prefabs">
       <UniqueIdentifier>{697651d2-0cd7-45c2-b4a6-56fe6f15526c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="MyStuff">
+      <UniqueIdentifier>{8083668d-fe39-4d60-a118-032e79f4ac1b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -224,6 +227,9 @@
     <ClCompile Include="Lab7.cpp">
       <Filter>Labs</Filter>
     </ClCompile>
+    <ClCompile Include="adamTest.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Camera.h">
@@ -403,6 +409,7 @@
     <ClInclude Include="Lab7.h">
       <Filter>Labs</Filter>
     </ClInclude>
+    <ClInclude Include="adamTest.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Content\CubeShader.fragmentshader">

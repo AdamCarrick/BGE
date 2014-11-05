@@ -80,6 +80,18 @@ void Lab6::Update()
 
 	// Your code goes here...
 
+	//get 
+	//ship1->transform->orientation = (ship2->transform);
+
+	//Dot product = angle between two points
+	 
+	float angle = glm::dot((ship2->transform->position - ship2->transform->position), (ship1->transform->position - ship2->transform->position));
+	glm::vec3 axis = glm::cross(ship1->transform->position, ship2->transform->position);
+	
+	ship1->transform->orientation = glm::angleAxis(glm::degrees(angle), axis);
+	//glm::angleAxis
+
+
 	Game::Update();
 
 }
