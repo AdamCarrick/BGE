@@ -230,6 +230,9 @@
     <ClCompile Include="adamTest.cpp">
       <Filter>Engine</Filter>
     </ClCompile>
+    <ClCompile Include="testGravity.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Camera.h">
@@ -410,6 +413,7 @@
       <Filter>Labs</Filter>
     </ClInclude>
     <ClInclude Include="adamTest.h" />
+    <ClInclude Include="testGravity.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Content\CubeShader.fragmentshader">
