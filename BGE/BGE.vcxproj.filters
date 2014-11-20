@@ -230,18 +230,17 @@
     <ClCompile Include="adamTest.cpp">
       <Filter>Engine</Filter>
     </ClCompile>
-<<<<<<< HEAD
     <ClCompile Include="testGravity.cpp">
       <Filter>Engine</Filter>
-=======
+    </ClCompile>
     <ClCompile Include="VRGame1.cpp">
       <Filter>Games</Filter>
     </ClCompile>
     <ClCompile Include="Person.cpp">
       <Filter>Kinect1</Filter>
->>>>>>> 3678cf3134f1d6a764596ec8fd08db732d4a4db5
     </ClCompile>
   </ItemGroup>
+  
   <ItemGroup>
     <ClInclude Include="Camera.h">
       <Filter>Camera</Filter>
@@ -420,18 +419,21 @@
     <ClInclude Include="Lab7.h">
       <Filter>Labs</Filter>
     </ClInclude>
-<<<<<<< HEAD
-    <ClInclude Include="adamTest.h" />
-    <ClInclude Include="testGravity.h" />
-=======
-    <ClInclude Include="EmptyGame.h" />
+    <ClInclude Include="adamTest.h">
+      <Filter>MyStuff</Filter>
+    </ClInclude>
+    <ClInclude Include="testGravity.h">
+      <Filter>MyStuff</Filter>
+    </ClInclude>
+    <ClInclude Include="EmptyGame.h">
+        <Filter>MyStuff</Filter>
+    </ClInclude>
     <ClInclude Include="VRGame1.h">
       <Filter>Games</Filter>
     </ClInclude>
     <ClInclude Include="Person.h">
       <Filter>Kinect1</Filter>
     </ClInclude>
->>>>>>> 3678cf3134f1d6a764596ec8fd08db732d4a4db5
   </ItemGroup>
   <ItemGroup>
     <None Include="Content\CubeShader.fragmentshader">
