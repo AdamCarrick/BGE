@@ -233,14 +233,7 @@
     <ClCompile Include="testGravity.cpp">
       <Filter>Engine</Filter>
     </ClCompile>
-    <ClCompile Include="VRGame1.cpp">
-      <Filter>Games</Filter>
-    </ClCompile>
-    <ClCompile Include="Person.cpp">
-      <Filter>Kinect1</Filter>
-    </ClCompile>
   </ItemGroup>
-  
   <ItemGroup>
     <ClInclude Include="Camera.h">
       <Filter>Camera</Filter>
@@ -424,15 +417,6 @@
     </ClInclude>
     <ClInclude Include="testGravity.h">
       <Filter>MyStuff</Filter>
-    </ClInclude>
-    <ClInclude Include="EmptyGame.h">
-        <Filter>MyStuff</Filter>
-    </ClInclude>
-    <ClInclude Include="VRGame1.h">
-      <Filter>Games</Filter>
-    </ClInclude>
-    <ClInclude Include="Person.h">
-      <Filter>Kinect1</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

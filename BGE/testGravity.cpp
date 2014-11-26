@@ -12,6 +12,6 @@ namespace BGE{
 	}
 
 	void update(){
-		transform->
+		//transform->
 	}
 }
