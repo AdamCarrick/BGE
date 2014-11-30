@@ -227,11 +227,11 @@
     <ClCompile Include="Lab7.cpp">
       <Filter>Labs</Filter>
     </ClCompile>
-    <ClCompile Include="adamTest.cpp">
-      <Filter>Engine</Filter>
-    </ClCompile>
     <ClCompile Include="testGravity.cpp">
-      <Filter>Engine</Filter>
+      <Filter>MyStuff</Filter>
+    </ClCompile>
+    <ClCompile Include="adamTest.cpp">
+      <Filter>MyStuff</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

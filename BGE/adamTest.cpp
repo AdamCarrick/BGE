@@ -1,19 +1,7 @@
 #include "adamTest.h"
-#include "PhysicsController.h"
-#include "Sphere.h"
-#include "PhysicsCamera.h"
-#include "Box.h"
-#include "Cylinder.h"
-#include "Steerable3DController.h"
-#include "Ground.h"
-#include "Content.h"
-#include <btBulletDynamicsCommon.h>
-#include <gtc/quaternion.hpp>
-#include <gtx/quaternion.hpp>
-#include <gtx/euler_angles.hpp>
-#include <gtx/norm.hpp>
-#include "VectorDrawer.h"
-#include "Utils.h"
+
+
+
 
 using namespace BGE;
 
@@ -30,6 +18,12 @@ std::shared_ptr<GameComponent> aStation;
 
 bool adamTest::Initialise()
 {
+	//dynamicsWorld->getDebugDrawer()->DBG_DrawConstraints;
+	int mode = btIDebugDraw::DBG_DrawWireframe
+		+ btIDebugDraw::DBG_DrawConstraints
+		+ btIDebugDraw::DBG_DrawConstraintLimits;
+	dynamicsWorld->getDebugDrawer()->setDebugMode(mode);
+	
 	//physicsFactory->CreateGroundPhysics();
 	physicsFactory->CreateCameraPhysics();
 
@@ -73,11 +67,13 @@ bool adamTest::Initialise()
 
 		bodyFront = physicsFactory->CreateBox(1, 1, 2, glm::vec3(1.5, 4.5, 4), glm::quat());
 		bodyBack = physicsFactory->CreateBox(1, 1, 2, glm::vec3(1.5, 4.5, 1), glm::quat());
-		btHingeConstraint * hinge = new btHingeConstraint(*leftFrontShin->rigidBody, *leftFrontFoot->rigidBody, //Parts to connect
+		
+		btHingeConstraint * hinge = new btHingeConstraint(*leftFrontShin->rigidBody, *leftFrontFoot->rigidBody,
 			btVector3(0, 1.25f, 0), btVector3(0, -1.25f, 0) //local point of connection, for item a and b
-			, btVector3(2, 0, 0), btVector3(2, 0, 0));// the vectors around which to rotate
-		dynamicsWorld->addConstraint(hinge);
+			, btVector3(1, 0, 0), btVector3(0, 0, 0),false);// the vectors around which to rotate
 
+		dynamicsWorld->addConstraint(hinge);
+		hinge->setDbgDrawSize(btScalar(5.0f));
 
 	if (!Game::Initialise()) {
 		return false;
