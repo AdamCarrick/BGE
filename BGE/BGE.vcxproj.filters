@@ -227,10 +227,13 @@
     <ClCompile Include="Lab7.cpp">
       <Filter>Labs</Filter>
     </ClCompile>
-    <ClCompile Include="adamTest.cpp">
-      <Filter>Engine</Filter>
-    </ClCompile>
     <ClCompile Include="testGravity.cpp">
+      <Filter>MyStuff</Filter>
+    </ClCompile>
+    <ClCompile Include="adamTest.cpp">
+      <Filter>MyStuff</Filter>
+    </ClCompile>
+    <ClCompile Include="BGEDebugDrawer.cpp">
       <Filter>Engine</Filter>
     </ClCompile>
   </ItemGroup>
@@ -418,6 +421,7 @@
     <ClInclude Include="testGravity.h">
       <Filter>MyStuff</Filter>
     </ClInclude>
+    <ClInclude Include="BGEDebugDrawer.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Content\CubeShader.fragmentshader">
