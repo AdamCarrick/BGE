@@ -18,7 +18,10 @@ std::shared_ptr<GameComponent> aStation;
 
 bool adamTest::Initialise()
 {
-	//dynamicsWorld->getDebugDrawer()->DBG_DrawConstraints;
+	BGEDebugDrawer *debugDraw;
+	debugDraw = new BGEDebugDrawer();
+		
+	dynamicsWorld->setDebugDrawer(debugDraw);
 	int mode = btIDebugDraw::DBG_DrawWireframe
 		+ btIDebugDraw::DBG_DrawConstraints
 		+ btIDebugDraw::DBG_DrawConstraintLimits;

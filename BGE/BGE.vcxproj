@@ -103,6 +103,7 @@
     <ClCompile Include="AttackingState.cpp" />
     <ClCompile Include="Buddha.cpp" />
     <ClCompile Include="Capsule.cpp" />
+    <ClCompile Include="BGEDebugDrawer.cpp" />
     <ClCompile Include="FlockingScenario.cpp" />
     <ClCompile Include="FountainEffect.cpp" />
     <ClCompile Include="IdleState.cpp" />
@@ -167,6 +168,7 @@
     <ClInclude Include="AttackingState.h" />
     <ClInclude Include="Buddha.h" />
     <ClInclude Include="Capsule.h" />
+    <ClInclude Include="BGEDebugDrawer.h" />
     <ClInclude Include="FlockingScenario.h" />
     <ClInclude Include="FountainEffect.h" />
     <ClInclude Include="IdleState.h" />

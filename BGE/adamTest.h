@@ -19,6 +19,7 @@
 #include "VectorDrawer.h"
 #include "Utils.h"
 #include <LinearMath/btIDebugDraw.h>
+#include "BGEDebugDrawer.h"
 
 namespace BGE
 {

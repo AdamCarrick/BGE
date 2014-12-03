@@ -3,7 +3,7 @@
 #include <GL/glew.h>
 #include <GL/gl.h>
 #include <GL/glu.h>
-#include<glm.hpp>
+#include <glm.hpp>
 #include <vector>
 #include <gtc/matrix_transform.hpp>
 #include <gtc/quaternion.hpp>
