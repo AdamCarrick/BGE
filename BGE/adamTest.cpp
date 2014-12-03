@@ -74,8 +74,8 @@ bool adamTest::Initialise()
 		bodyFront = physicsFactory->CreateBox(1, 1, 2, glm::vec3(1.5, 4.5, 4), glm::quat());
 		bodyBack = physicsFactory->CreateBox(1, 1, 2, glm::vec3(1.5, 4.5, 1), glm::quat());
 		btHingeConstraint * hinge = new btHingeConstraint(*leftFrontShin->rigidBody, *leftFrontFoot->rigidBody, //Parts to connect
-			btVector3(0, 1.25f, 0), btVector3(0, -1.25f, 0) //local point of connection, for item a and b
-			, btVector3(2, 0, 0), btVector3(2, 0, 0));// the vectors around which to rotate
+			btVector3(0, -1.25f, 0), btVector3(0, 1.25f, 0) //local point of connection, for item a and b
+			, btVector3(1, 0, 0), btVector3(1, 0, 0));// the vectors around which to rotate
 		dynamicsWorld->addConstraint(hinge);
 
 
