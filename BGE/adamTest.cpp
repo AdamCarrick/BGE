@@ -1,8 +1,4 @@
 #include "adamTest.h"
-
-
-
-
 using namespace BGE;
 
 adamTest::adamTest(void)
@@ -48,9 +44,13 @@ bool adamTest::Initialise()
 		shared_ptr<PhysicsController> leftBackFoot;
 		shared_ptr<PhysicsController> rightBackFoot;
 
+
 		leftFrontFoot = physicsFactory->CreateBox(1, 2, 1, glm::vec3(0,1,5) ,glm::quat());
 		rightFrontFoot = physicsFactory->CreateBox(1, 2, 1, glm::vec3(3,1,5), glm::quat());
-		
+
+		leftFrontFoot->transform->diffuse = glm::vec3(0,0,0) ;
+
+
 		leftBackFoot = physicsFactory->CreateBox(1, 2, 1, glm::vec3(0,1,0), glm::quat());
 		rightBackFoot = physicsFactory->CreateBox(1, 2, 1, glm::vec3(3,1,0), glm::quat());
 
@@ -78,6 +78,7 @@ bool adamTest::Initialise()
 		dynamicsWorld->addConstraint(hinge);
 		hinge->setDbgDrawSize(btScalar(5.0f));
 
+	
 	if (!Game::Initialise()) {
 		return false;
 	}
