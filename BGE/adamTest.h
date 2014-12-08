@@ -35,5 +35,6 @@ namespace BGE
 		void Update();
 		void Cleanup();
 		void CreateWall();
+		void makeAnimat(glm::vec3 location);
 	};
 }
