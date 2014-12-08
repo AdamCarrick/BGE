@@ -260,6 +260,10 @@ void Game::Draw()
 	else
 	{
 		glViewport(0, 0, Params::GetFloat("width"), Params::GetFloat("height"));
+		
+		LineDrawer::DrawArrowLine(glm::vec3(0, 0, 0), glm::vec3(0, 50, 0), glm::vec3(1, 1, 1));
+
+		dynamicsWorld->debugDrawWorld();
 		LineDrawer::Instance()->Draw();
 		GameComponent::Draw();			
 	}
