@@ -11,7 +11,7 @@
 #include "GameComponent.h"
 
 
-#define MAX_LINES 1000
+#define MAX_LINES 100000
 
 
 namespace BGE

@@ -45,14 +45,14 @@ bool adamTest::Initialise()
 
 		makeAnimat(glm::vec3(0,0,0));
 
-		makeAnimat(glm::vec3(10, 0, 0));
+		//makeAnimat(glm::vec3(10, 0, 0));
 
-		makeAnimat(glm::vec3(20, 0, 0));
+		//makeAnimat(glm::vec3(20, 0, 0));
 
-		makeAnimat(glm::vec3(30, 0, 0));
+		//makeAnimat(glm::vec3(30, 0, 0));
 		
 
-		//hinge->setDbgDrawSize(btScalar(5.0f));
+		
 
 	if (!Game::Initialise()) {
 		return false;
@@ -110,4 +110,5 @@ void adamTest::makeAnimat(glm::vec3 location)
 		, btVector3(1, 0, 0), btVector3(0, 0, 0), false);// the vectors around which to rotate
 
 	dynamicsWorld->addConstraint(hinge);
+	hinge->setDbgDrawSize(btScalar(5.0f));
 }
